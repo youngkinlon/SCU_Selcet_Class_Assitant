@@ -26,7 +26,7 @@ header = {
 with open("config.txt", "r", encoding='utf-8') as f:
     info = f.readlines()
 j_username = info[0].strip('\n')
-j_password = "Yjl20051214!"
+j_password = info[1].strip('\n')
 courseNames = info[2].strip('\n').split(';')
 # 课程号
 courseNums = info[3].strip('\n').split(';')
